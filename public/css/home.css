@@ -1,0 +1,54 @@
+@font-face {
+  font-family: logo;
+  src: url("../fonts/Midorima-PersonalUse-Regular.ttf");
+}
+
+body {
+  height: 100vh;
+  /* background-image: url("https://i.imgur.com/XJ6pbzw.png"); */
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span, p, h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.slide-image,
+.slide-image-2,
+.slide-image-3 {
+  filter: brightness(50%);
+}
+
+.break {
+  width: 100vw;
+  height: 125px;
+  background-color: #ff0505;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://www.kolpaper.com/wp-content/uploads/2021/05/Guts-Berserk-Wallpapers-2.jpg');
+  background-size: 40%;
+  background-position: 15% 25%;
+  background-repeat: no-repeat;
+  filter: brightness(100%) contrast(80%);
+}
+
+.favorites-text {
+  font-family: 'logo';
+  color: #ffffff;
+  font-size: 50px;
+  display: inline-block;
+}
+
+.favorites-container {
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 25px;
+  margin: 0 auto;
+  gap: 35px;
+}
+
+
