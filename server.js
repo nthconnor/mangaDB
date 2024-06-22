@@ -26,10 +26,6 @@ async function connectToMongo() {
 
 connectToMongo();
 
-app.get("/", (req, res) => {
-  res.render("home.ejs");
-});
-
 app.listen(PORT, () => {
   console.log(`listening on port: ${PORT}`);
 });

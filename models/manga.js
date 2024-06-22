@@ -6,6 +6,7 @@ const mangaSchema = new Schema({
   author: { type: String, required: true },
   genre: { type: String, required: true },
   img: { type: String, required: true },
+  description: { type: String },
   chapters: { type: Number },
 });
 
