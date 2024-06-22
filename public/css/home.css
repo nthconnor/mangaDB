@@ -10,15 +10,14 @@ body {
   width: 100%;
   background-size: cover;
   font-family: 'Roboto';
+  margin-top: -15px;
 }
 
 span {
   font-weight: bold;
 }
 
-.slide-image,
-.slide-image-2,
-.slide-image-3 {
+.slide-image {
   filter: brightness(100%);
 }
 
@@ -57,8 +56,9 @@ span {
   flex-wrap: wrap;
   justify-content: start;
   padding: 25px;
-  margin: 25px 25px;
-  gap: 25px;
+  padding-top: 50px;
+  margin: 0 auto;
+  gap: 17px;
 }
 
 #explore {

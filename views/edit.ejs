@@ -16,7 +16,6 @@
   <%- include('./partials/header.ejs') %>
   <body class="text-center">
     <main class="container main d-flex">
-      <h3>CAN'T FIND A TITLE? <br>ADD IT HERE</h3>
       <br />
       <div class="container form">
         <form action="/collection" method="POST">
@@ -26,7 +25,7 @@
               class="form-control"
               name="title"
               id="title"
-              placeholder="Title"
+              value="<%=manga.title%>"
             />
           </div>
           <div class="form-group mb-2">
@@ -35,7 +34,7 @@
               class="form-control"
               name="author"
               id="author"
-              placeholder="Author"
+              value="<%=manga.author%>"
             />
           </div>
           <div class="form-group mb-2">
@@ -44,7 +43,7 @@
               class="form-control"
               name="genre"
               id="genre"
-              placeholder="Genre"
+              value="<%=manga.genre%>"
             />
           </div>
           <div class="form-group mb-2">
@@ -53,7 +52,7 @@
               class="form-control"
               name="img"
               id="img"
-              placeholder="Image URL"
+              value="<%=manga.img%>"
             />
           </div>
           <div class="form-group mb-2">
@@ -62,7 +61,7 @@
               class="form-control"
               name="description"
               id="description"
-              placeholder="Description"
+              value="<%=manga.description%>"
             />
           </div>
           <div class="form-group mb-2">
@@ -70,7 +69,7 @@
               type="submit"
               class="form-control btn btn-danger"
               style="background-color: #ec3b0f"
-              value="Add"
+              value="SUBMIT"
             />
           </div>
         </form>
