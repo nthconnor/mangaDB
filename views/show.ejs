@@ -17,7 +17,7 @@
   <body>
     <main class="container" style="height: 100vh">
       <div class="container d-flex">
-          <img class="cover img-fluid" src="<%= manga.img%>" alt="" />
+        <img class="cover img-fluid" src="<%= manga.img%>" alt="" />
         <div class="text">
           <h3><%= manga.title %></h3>
           <h6><%= manga.author %></h6>
@@ -25,7 +25,20 @@
             <hr />
             <p><%= manga.description %></p>
           </div>
-          <a class="btn btn-danger" style="background-color: #ec3b0f;" href="/manga/<%=manga.id %>/edit">EDIT</a>
+          <a
+            class="btn btn-danger"
+            style="background-color: #ec3b0f"
+            href="/manga/<%=manga.id %>/edit"
+            >EDIT</a
+          >
+          <form action="/manga/<%=manga.id %>?_method=DELETE" method="POST">
+            <input
+              type="submit"
+              value="REMOVE"
+              class="btn btn-danger mt-3"
+              style="background-color: #ec3b0f"
+            />
+          </form>
         </div>
       </div>
     </main>

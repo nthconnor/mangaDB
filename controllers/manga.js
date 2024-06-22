@@ -68,7 +68,14 @@ router.get('/collection/add', (req, res) => {
 })
 
 // DELETE
-// /collections/:id/remove
+router.delete('/manga/:id', async (req, res) => {
+  try {
+   await Manga.findByIdAndDelete(req.params.id)
+   res.redirect('/collection')
+  } catch (err) {
+   console.error(err)
+  }
+})
 
 // UPDATE
 router.put("/manga/:id", async (req, res)=>{
