@@ -71,6 +71,14 @@ router.get('/collection/add', (req, res) => {
 // /collections/:id/remove
 
 // UPDATE
+router.put("/manga/:id", async (req, res)=>{
+  try{
+      const updatedManga = await Manga.findByIdAndUpdate(req.params.id, req.body,{ new: true})
+      res.redirect(`/manga/${req.params.id}`);
+  } catch (err){
+   console.error(err)   
+  }
+})
 
 
 // CREATE
