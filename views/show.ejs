@@ -17,13 +17,11 @@
   <body>
     <main class="container" style="height: 100vh">
       <div class="container d-flex">
-        <img src="<%= manga.img%>" alt="" />
+          <img class="cover img-fluid" src="<%= manga.img%>" alt="" />
         <div class="text">
           <h3><%= manga.title %></h3>
           <h6><%= manga.author %></h6>
-          <br />
           <div class="summary">
-            <h6>Description</h6>
             <hr />
             <p><%= manga.description %></p>
           </div>

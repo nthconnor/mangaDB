@@ -128,10 +128,10 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="break d-flex">
+    <div class="break d-flex" id="explore">
       <h2 class="favorites-text">fan favorites</h2>
     </div>
-    <div class="favorites-container" id="explore">
+    <div class="favorites-container">
       <% for(let i=0; i < manga.length; i++){ %>
       <a href="/manga/<%=manga[i].id; %>"
         ><div class="card" style="width: 12rem">

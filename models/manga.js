@@ -7,7 +7,6 @@ const mangaSchema = new Schema({
   genre: { type: String, required: true },
   img: { type: String, required: true },
   description: { type: String },
-  chapters: { type: Number },
 });
 
 const Manga = mongoose.model("Manga", mangaSchema);

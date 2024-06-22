@@ -19,3 +19,8 @@ body {
 img {
   padding: 10px;
 }
+
+.cover {
+  height: 500px;
+  object-fit: cover;
+}

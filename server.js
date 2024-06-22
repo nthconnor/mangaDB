@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const methodOverride = require("method-override");
 require("dotenv").config();
 const app = express();
-const PORT = process.env.DEV_PORT || 4000;
+const PORT = process.env.PORT;
 const mangaController = require('./controllers/manga')
 
 const mongoURI = "mongodb://127.0.0.1:27017/manga";
