@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-    padding-top: 100px;
-    font-family: 'Roboto';
+  padding-top: 100px;
+  font-family: "Roboto";
 }
 
 h3 {
-    font-weight: bold;
-    color: #ec3b0f;
+  font-weight: bold;
+  color: #ec3b0f;
 }
 
 .main {
-    height: 80vh;
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+  height: 80vh;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .form {
-    width: 300px;
+  width: 300px;
 }
