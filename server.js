@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT;
 const mangaController = require('./controllers/manga')
 
-const mongoURI = "mongodb://127.0.0.1:27017/manga";
+const mongoURI = process.env.MONGOURI;
 
 // middleware
 app.use(express.static("public"));
