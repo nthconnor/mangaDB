@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT;
 const mangaController = require('./controllers/manga')
 
-const mongoURI = process.env.MONGOURI;
+const mongoURI = process.env.MONGOURI
 
 // middleware
 app.use(express.static("public"));
